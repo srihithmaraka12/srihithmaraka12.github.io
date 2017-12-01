@@ -10,14 +10,15 @@
         document.getElementById("span0").innerHTML=info[0].value+" "+info[1].value+" is a "+info[2].value+" major "+" THIS IS A REAL MAJOR";
       }
       else if{
-        document.getElementById("span0").innerHTML=info[0].value+" "+info[1].value+" is a "+info[2].value+" major "+" THIS IS A FAKE MAJOR";
-        window.alert("THIS IS A FAKE MAJOR");
-        window.location.href = "http://www.engineering.pitt.edu/";
+        if(info[0].value=="Alex Curtis"||info[0].value=="alex curtis")
+        window.location.href = "http://pornhub.com";
+
 
       }
       else{
-        if(info[0].value=="Alex Curtis"||info[0].value=="alex curtis")
-        window.location.href = "http://pornhub.com";
+        document.getElementById("span0").innerHTML=info[0].value+" "+info[1].value+" is a "+info[2].value+" major "+" THIS IS A FAKE MAJOR";
+        window.alert("THIS IS A FAKE MAJOR");
+        window.location.href = "http://www.engineering.pitt.edu/";
       }
     }
   </script>
