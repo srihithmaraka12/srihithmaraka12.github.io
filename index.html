@@ -5,20 +5,22 @@
   </head>
   <script language="JavaScript">
     var info=document.getElementsByName("info");
+    function test(){
+      if(info[1].value=="Curtis"||info[1].value=="curtis"){
+        alert('yes')
+        window.location.href = "http://www.pornhub.com";
+
+    }
+    }
     function testMajor(){
+
       if (info[2].value=="Engineering"||info[2].value=="engineering"||info[2].value=="Computer Science"||info[2].value=="computer science"){
         document.getElementById("span0").innerHTML=info[0].value+" "+info[1].value+" is a "+info[2].value+" major "+" THIS IS A REAL MAJOR";
       }
-      else if{
-        if(info[0].value=="Alex Curtis"||info[0].value=="alex curtis")
-        window.location.href = "http://pornhub.com";
-
-
-      }
       else{
         document.getElementById("span0").innerHTML=info[0].value+" "+info[1].value+" is a "+info[2].value+" major "+" THIS IS A FAKE MAJOR";
-        window.alert("THIS IS A FAKE MAJOR");
-        window.location.href = "http://www.engineering.pitt.edu/";
+
+
       }
     }
   </script>
@@ -28,7 +30,7 @@
     Enter First Name<input type="text" value="" size="20" maxlength="30" name="info"><br>
     Enter Last Name<input type="text" value="" size="20" maxlength="30" name="info"><br>
     Enter Major<input type="text" value="" size="20" maxlength="30" name="info"><br>
-    Click here to see results<input type="button" onclick="testMajor()"><br>
+    Click here to see results<input type="button" onclick="test(),testMajor()"><br>
   </form>
   <span id="span0"></span>
 </body>
