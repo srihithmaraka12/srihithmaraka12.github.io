@@ -11,8 +11,10 @@
       }
       else{
         document.getElementById("span0").innerHTML=info[0].value+" "+info[1].value+" is a "+info[2].value+" major "+" THIS IS A FAKE MAJOR";
-        window.alert("THIS IS A FAKE MAJOR")
-        window.location.href="http://www.engineering.pitt.edu/"
+        window.alert("THIS IS A FAKE MAJOR");
+        setTimeout(function() {
+        window.location.href = "http://www.engineering.pitt.edu/";
+        }, 3000);
       }
     }
   </script>
