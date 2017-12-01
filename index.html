@@ -6,23 +6,22 @@
   <script language="JavaScript">
     var info=document.getElementsByName("info");
     function test(){
-      if(info[1].value=="Curtis"||info[1].value=="curtis"){
-        window.location.href = "https://www.apa.org/topics/anger/control.aspx";
-    }
+      if(info[1].value=="Curtis"||info[1].value=="curtis"||info[1]=="Sam"||info[1]=="sam"){
+        window.location.href = "http://locator.apa.org/?_ga=2.82945119.816090229.1512169170-689436425.1512169170";
+      }
     }
     function testMajor(){
-
-      if (info[2].value=="Engineering"||info[2].value=="engineering"||info[2].value=="Computer Science"||info[2].value=="computer science"){
+      if (info[2].value=="Engineering"||info[2].value=="engineering"||info[2].value=="Computer Science"||info[2].value=="computer science"||info[2].value=="Computer science"){
         document.getElementById("span0").innerHTML=info[0].value+" "+info[1].value+" is a "+info[2].value+" major "+" THIS IS A REAL MAJOR";
+        var string="You are pretty smart. You should invest in bitcoin."
+        document.getElementById("span1").innerHTML=
       }
       else{
         document.getElementById("span0").innerHTML=info[0].value+" "+info[1].value+" is a "+info[2].value+" major "+" THIS IS A FAKE MAJOR";
-
-
       }
     }
   </script>
-  <body>
+    <background color="red">
     <h1><center>Test and see if you have a fake major</h1></center>
     <form>
     Enter First Name<input type="text" value="" size="20" maxlength="30" name="info"><br>
@@ -31,5 +30,6 @@
     Click here to see results<input type="button" onclick="test(),testMajor()"><br>
   </form>
   <span id="span0"></span>
+  <span id="span1"></span>
 </body>
 </html>
