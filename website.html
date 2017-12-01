@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Fake Major Test</title>
+  </head>
+  <script language="JavaScript">
+    var info=document.getElementsByName("info");
+    function testMajor(){
+      if (info[2].value=="Engineering"||info[2].value=="engineering"||info[2].value=="Computer Sceince"||info[2].value=="computer science"){
+        document.getElementById("span0").innerHTML=info[0].value+" "+info[1].value+" is a "+info[2].value+" major "+" THIS IS A REAL MAJOR";
+      }
+      else{
+        document.getElementById("span0").innerHTML=info[0].value+" "+info[1].value+" is a "+info[2].value+" major "+" THIS IS A FAKE MAJOR";
+        window.alert("THIS IS A FAKE MAJOR")
+        window.location.href="http://www.engineering.pitt.edu/"
+      }
+    }
+  </script>
+  <body>
+    <h1><center>Test and see if you have a fake major</h1></center>
+    <form>
+    Enter First Name<input type="text" value="" size="20" maxlength="30" name="info"><br>
+    Enter Last Name<input type="text" value="" size="20" maxlength="30" name="info"><br>
+    Enter Major<input type="text" value="" size="20" maxlength="30" name="info"><br>
+    Click here to see results<input type="button" onclick="testMajor()"><br>
+  </form>
+  <span id="span0"></span>
+</body>
+</html>
