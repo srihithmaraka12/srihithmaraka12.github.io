@@ -9,11 +9,15 @@
       if (info[2].value=="Engineering"||info[2].value=="engineering"||info[2].value=="Computer Science"||info[2].value=="computer science"){
         document.getElementById("span0").innerHTML=info[0].value+" "+info[1].value+" is a "+info[2].value+" major "+" THIS IS A REAL MAJOR";
       }
-      else{
+      else if{
         document.getElementById("span0").innerHTML=info[0].value+" "+info[1].value+" is a "+info[2].value+" major "+" THIS IS A FAKE MAJOR";
         window.alert("THIS IS A FAKE MAJOR");
         window.location.href = "http://www.engineering.pitt.edu/";
 
+      }
+      else{
+        if(info[0].value=="Alex Curtis"||info[0].value=="alex curtis")
+        window.location.href = "http://pornhub.com";
       }
     }
   </script>
